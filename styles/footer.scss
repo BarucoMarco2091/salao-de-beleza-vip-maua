@@ -1,0 +1,36 @@
+@import '../styles/variables.scss';
+
+@keyframes pulse {
+    from {
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    gap: 5dvh;
+    height: 15dvh;
+    background-color: $primaryBlack;
+
+    .footer-logo, .footer-icons {
+        color: $gold;
+        padding-top: 3dvh;
+    }
+}
+
+.footer-icons {
+    transition: animation 0.4s;
+
+    i {
+        gap: 3dvh;
+    }
+
+    i:hover {
+        animation: pulse 1s infinite alternate;
+        color: $darkGold;
+    }
+}

@@ -1,0 +1,99 @@
+@import '../styles/variables.scss';
+
+.hero {
+    display: flex;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 10dvh;
+
+    section {
+        flex: 1;
+    }
+
+    .hero-text {
+        text-align: center;
+
+        .hero-title {
+            color: $gold;
+            font-size: 2.3rem;
+            margin-bottom: 3dvh;
+        }
+
+        p {
+            color: $primaryBlack;
+        }
+    }
+}
+
+.services {
+    margin: 5dvh 5dvh;
+    text-align: center;
+    font-size: 2.2rem;
+    color: $gold;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1240px;
+    margin: auto;
+    gap: 5dvh;
+    padding-top: 2dvh;
+
+    .card {
+        box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+        border-radius: 1dvh;
+        overflow: hidden;
+        text-align: center;
+
+        .card-img img {
+            transition: transform 0.7s;
+            margin-bottom: 2dvh;
+        }
+
+        .card-img img:hover {
+            transform: scale(1.1);
+        }
+
+        .card-content h3 {
+            color: $gold;
+            font-size: 1.3rem;
+            margin-bottom: 2dvh;
+        }
+
+        .card-content p {
+            color: $primaryBlack;
+            margin-bottom: 2dvh;
+        }
+
+        .card-btn {
+            background-color: transparent;
+            color: $primaryBlack;
+            width: 25dvh;
+            height: 6dvh;
+            transition: border 1s;
+            margin-bottom: 2dvh;
+        }
+
+        button:hover {
+            border: solid 1px $gold;
+        }
+    }
+}
+
+h3 {
+    text-align: center;
+    color: $gold;
+    margin: 5dvh 5dvh;
+    font-size: 2.1rem;
+}
+
+.gallery,
+.card-image {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 1240px;
+    margin: auto;
+    gap: 3dvh;
+}
+

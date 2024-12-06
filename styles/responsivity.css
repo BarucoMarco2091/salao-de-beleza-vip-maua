@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@media screen and (max-width: 320px) {
+  .banner-text {
+    position: relative;
+    top: -40dvh !important;
+  }
+  .banner-text button {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  #mobile_btn {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-text {
+    text-align: center;
+    margin: 2dvh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 1170px) {
+  footer {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .nav-list {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-text {
+    text-align: center;
+    margin: 2dvh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=responsivity.css.map */

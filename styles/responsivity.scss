@@ -1,0 +1,78 @@
+@import '../styles/variables.scss';
+
+// mobile
+@media screen and (max-width:320px) {
+    .banner-text {
+        position: relative;
+        top: -40dvh !important;
+
+        button {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #mobile_btn {
+        display: block !important;
+    }
+}
+
+// main 
+@media screen and (max-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin: 2dvh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+// footer 
+@media screen and (max-width: 1170px) {
+    footer {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .nav-list {
+        display: none !important;
+    }
+}
+
+//tablet 
+@media screen and (max-width: 1024px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin: 2dvh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@keyframes pulse {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  gap: 5dvh;
+  height: 15dvh;
+  background-color: #0c0c0c;
+}
+footer .footer-logo, footer .footer-icons {
+  color: #daa22c;
+  padding-top: 3dvh;
+}
+
+.footer-icons {
+  transition: animation 0.4s;
+}
+.footer-icons i {
+  gap: 3dvh;
+}
+.footer-icons i:hover {
+  animation: pulse 1s infinite alternate;
+  color: #856a2f;
+}/*# sourceMappingURL=footer.css.map */
